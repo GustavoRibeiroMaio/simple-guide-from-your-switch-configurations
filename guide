@@ -18,7 +18,7 @@ SW-01(Config-line)#exit
 SW-01(Configure)#service password-encryption
 SW-01(Configure)#interface vlan 1
 SW-01(Config-if)#ip address [IP] [mask]
-SW-01(Config-if)#no shutsown
+SW-01(Config-if)#no shutdown
 SW-01(Config-if)#exit
 SW-01(Configure)#interface [fastethernet,gigabitethernet,vlan] (for example fastethernet 0/1)
 SW-01(Config-if)#description (description web) (for example conected fast01)
