@@ -1,5 +1,5 @@
 Switch>enable
-Switch#configurte terminal
+Switch#configure terminal
 Switch(Configure)#hostname "name" (for example SW-01)
 SW-01(Configure)#enable password "password" (for example senaitop)
 SW-01(Configure)#enable secret "password" (for example senaitop)
