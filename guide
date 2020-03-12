@@ -1,0 +1,29 @@
+Switch>enable
+Switch#configurte terminal
+Switch(Configure)#hostname "name" (for example SW-01)
+SW-01(Configure)#enable password "password" (for example senaitop)
+SW-01(Configure)#enable secret "password" (for example senaitop)
+SW-01(Configure)#ip domain-name "name domain" (for example senai.local)
+SW-01(Configure)#crypto key generate rsa general-key modulus (1024 basic)
+SW-01(Configure)#line vty 0 15
+SW-01(Config-line)#transport imput ssh
+SW-01(Config-line)#password "password" (for example senaitop (the same password is not recommended)
+SW-01(Config-line)#login
+SW-01(Config-line)#exit
+SW-01(Configure)#banner motd "message" (for example only allowed here)
+SW-01(configure)#line console 0
+SW-01(Config-line)#password senaitop (for example senaitop (the same password is not recommended)
+SW-01(Config-line)#login
+SW-01(Config-line)#exit
+SW-01(Configure)#service password-encryption
+SW-01(Configure)#interface vlan 1
+SW-01(Config-if)#ip address [IP] [mask]
+SW-01(Config-if)#no shutsown
+SW-01(Config-if)#exit
+SW-01(Configure)#interface [fastethernet,gigabitethernet,vlan] (for example fastethernet 0/1)
+SW-01(Config-if)#description (description web) (for example conected fast01)
+SW-01(Config-if)#exit
+(REPEAT THIS FOR ALL CONNECTED INPUTS)
+SW-01(Configure)#end
+SW-01(configure)#exit
+FINISH =)
