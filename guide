@@ -23,7 +23,7 @@ SW-01(Config-if)#exit
 SW-01(Configure)#interface [fastethernet,gigabitethernet,vlan] (for example fastethernet 0/1)
 SW-01(Config-if)#description (description web) (for example conected fast01)
 SW-01(Config-if)#exit
-(REPEAT THIS FOR ALL CONNECTED INPUTS)
-SW-01(Configure)#end
-SW-01(configure)#exit
+(REPEPT THIS FOR ALL CONNECTED INPUTS)
+SW-01#wr
+
 FINISH =)
