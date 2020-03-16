@@ -25,5 +25,17 @@ SW-01(Config-if)#description (description web) (for example conected fast01)
 SW-01(Config-if)#exit
 (REPEPT THIS FOR ALL CONNECTED INPUTS)
 SW-01#wr
+SW-01#enable
+SW-01#configure terminal
+SW-01(configure)#username "name" (for example gustavomaio) privilege "number 1 up until 15" secret "password" (for example gustavo)
+SW-01(configure)#line console 0
+SW-01(config-line)#login local
+SW-01(config-line)#line vty 0 15
+SW-01(config-line)#login local
+SW-01(config-line)#end
+SW-01#wr
+SW-01#exit
+SW-01>
 
-FINISH =)
+FINISH THE SECOND PART =)
+WAIT THE NEXT UPDATE MY BENEVOLENT =)
